@@ -1,0 +1,253 @@
+/* Master Styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Navigation Bar Styles */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+.left-side {
+  display: flex;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.right-nav {
+  height: 75px;
+  padding-right: 10px;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+  color: #707070;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid lightcoral;
+}
+.nav-link-wrapper a:hover {
+  color: lightcoral;
+}
+.active-nav-link {
+  border-bottom: 1px solid lightcoral;
+}
+.active-nav-link a {
+  color: lightcoral !important;
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.portfolio-items-wrapper > * {
+  flex: 1 1 35em;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+  filter: invert(100%);
+  align-items: center;
+}
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 1000;
+  color: transparent;
+}
+.img-text-wrapper:hover .subtitle {
+  font-weight: 1000;
+  color: lightcoral;
+}
+.img-text-wrapper-top .subtitle {
+  transition: 1s;
+  font-weight: 1000;
+  color: transparent;
+}
+.img-text-wrapper-top:hover .subtitle {
+  font-weight: 1000;
+  color: lightcoral;
+}
+.img-darken {
+  transition: 0.5s;
+  filter: brightness(25%);
+}
+
+/*General page formatting*/
+
+.content-wrapper {
+  width: 100%;
+  padding: 1em;
+}
+
+.content-wrapper h1 {
+  color: lightcoral;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-wrapper h2 {
+  color: lightcoral;
+  padding: 10px;
+  text-align: left;
+}
+
+.card {
+  background-color: #e6e6e6;
+  padding: 20px;
+  border-radius: 1em;
+}
+
+/*About Me layout*/
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-image-content1 img {
+  width: 100%;
+  padding: 10px;
+}
+
+.about-content1 {
+  padding: 30px;
+}
+
+.feedback-form {
+  text-align: center;
+
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: lightcoral;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*Networks layout*/
+
+/*Pen_test layout*/
+
+/*Principles layout*/
+
+/*CTF layout*/
+.ctf-left-content {
+  flex: 1;
+  float: left;
+  width: 72%;
+}
+.ctf-right-content {
+  flex-wrap: wrap;
+  float: left;
+  width: 25%;
+  padding-left:  20px;
+
+}
+/*Ethical layout*/
+
+/*References Layout*/
+.ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: lightcoral;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+a.ref:link,
+a.ref:visited {
+  text-decoration: none;
+  color: lightcoral;
+}
+
+/*footer layout*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  display: grid;
+  flex: 1 1 100%;
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 1em;
+}
+
+.footer-link a {
+  color: #707070;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.footer-link a:hover {
+  color: lightcoral;
+}
+
+.footer-name {
+  color: #707070;
+}
